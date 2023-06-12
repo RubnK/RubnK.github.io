@@ -21,7 +21,11 @@ body{
     position: relative;
     transform-origin: 70% 70%;
 }
-
+h1{
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1em;
+}
 .recipes{
     display: flex;
     flex-direction: row;
