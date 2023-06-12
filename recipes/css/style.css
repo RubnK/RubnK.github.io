@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #635985 0%, #443C68 33%, #393053 66%, #18122B 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+    background-attachment: fixed;
+    color: white;
+    margin: 0px;
+}
+
+.wave{
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    animation-name: wave-animation;
+    display: inline-block;
+    position: relative;
+    transform-origin: 70% 70%;
+}
+
+.recipes{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 95%;
+    height: 30em;
+    margin: auto;
+    margin-top: 1.2em;
+}
+
+.recipe{
+    position: relative;
+    width: 33%;
+    background-color: #18122B;
+    padding: 2%;
+    font-weight: bold;
+}
+.recipes a:hover{
+    cursor: pointer;
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+    color: rgb(190, 190, 190);
+}
+.recipes a{
+    text-decoration: none;
+    
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    color: white;
+}
+.recipe img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.veggie{
+    position: absolute;
+    border: solid;
+    border-radius: .2em;
+    border-width: .25em;
+    right: 1em;
+    font-size: 1.5em;
+    width: 5em;
+    height: 2em;
+    color: rgb(89, 175, 89);
+    transform: rotate(20deg);
+}
+.veggie p{
+    text-align: center;
+    margin-top: .4em;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

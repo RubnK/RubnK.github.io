@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #635985 0%, #443C68 33%, #393053 66%, #18122B 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+    background-attachment: fixed;
+    color: white;
+    margin: 0px;
+}
+
+.page{
+  width: 80%;
+  margin: auto;
+}
+.page-top img{
+  width: 50em;
+  height: 35em;
+  object-fit: cover;
+}
+.wave{
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    animation-name: wave-animation;
+    display: inline-block;
+    position: relative;
+    transform-origin: 70% 70%;
+}
+.page-top{
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.infos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.ingredients{
+  margin-top: 0px;
+  width:20em;
+}
+.ingredients li{
+  list-style: none;
+  font-size: 1.6em;
+  margin-top:.3em ;
+}
+.ingredients h2{
+  font-size: 2em;
+}
+.steps{
+  width: 50%;
+  list-style: none;
+  margin-top: 2em;
+}
+.steps li{
+  margin-top: 2.2em;
+}
+.steps li p{
+  font-size: 1.3em;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
